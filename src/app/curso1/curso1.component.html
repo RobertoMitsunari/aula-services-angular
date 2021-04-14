@@ -1,0 +1,7 @@
+<h1>Curso 1</h1>
+<input type="text" #texto><button (click)="addCurso(texto.value)">Add Marine</button>
+<ul>
+    <li *ngFor="let curso of cursos, let i = index">{{i+1}} - {{curso}}</li>
+</ul>
+
+<app-receber-curso-criado></app-receber-curso-criado>
